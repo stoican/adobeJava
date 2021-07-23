@@ -2,7 +2,7 @@ package com.adobeJava.week2;
 
 
 public class LineProgressAware extends ProgressAware {
-    private int lineLength = 250;
+    private int lineLength;
 
     public static void main(String[] args) {
         LineProgressAware circleProgressAware = new LineProgressAware(150);
@@ -13,7 +13,7 @@ public class LineProgressAware extends ProgressAware {
     }
 
     public LineProgressAware() {
-
+        this.lineLength = 250;
     }
 
     public LineProgressAware(int lineLength) {

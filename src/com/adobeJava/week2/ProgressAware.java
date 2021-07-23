@@ -11,6 +11,10 @@ public class ProgressAware {
     }
 
     public void showProgress() {
+        if (isLoading) {
+            return;
+        }
+
         this.isLoading = true;
         System.out.println("Loading: ");
     }

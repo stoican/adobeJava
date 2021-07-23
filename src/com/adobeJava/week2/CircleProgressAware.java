@@ -1,7 +1,7 @@
 package com.adobeJava.week2;
 
 public class CircleProgressAware extends ProgressAware {
-    private final int angle = 360;
+    private final static int ANGLE = 360;
 
     public static void main(String[] args) {
         CircleProgressAware circleProgressAware = new CircleProgressAware();
@@ -21,7 +21,7 @@ public class CircleProgressAware extends ProgressAware {
                 currentSecond = (currentMillis - initialMillis) / 1000;
                 startMillis = currentMillis;
 
-                final int currentProgressPercentage = (int) (this.angle * (double) currentSecond / seconds);
+                final int currentProgressPercentage = (int) (ANGLE * (double) currentSecond / seconds);
                 System.out.println(currentProgressPercentage);
             }
         }
